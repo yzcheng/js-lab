@@ -1,0 +1,46 @@
+{
+  "name": "js-lab",
+  "version": "1.0.0",
+  "description": "first 1 projects",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzcheng/js-lab.git"
+  },
+  "keywords": [
+    "lab"
+  ],
+  "author": "yzcheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yzcheng/js-lab/issues"
+  },
+  "homepage": "https://github.com/yzcheng/js-lab#readme",
+  "devDependencies": {
+    "webpack": "^1.12.9",
+    "babel-eslint": "^5.0.0-beta6",
+    "compression-webpack-plugin": "^0.2.0",
+    "eslint": "^1.10.3",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-size": "^2.0.0",
+    "gulp-tslint": "^4.2.1",
+    "html-loader": "^0.4.0",
+    "pre-commit": "^1.1.2",
+    "require-dir": "^0.3.0",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5"
+  },
+  "dependencies": {
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.33.13",
+    "es7-reflect-metadata": "^1.4.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10",
+    "angular2": "2.0.0-beta.0",
+    "ng2-bootstrap": "1.0.0-beta.1"
+  }
+}

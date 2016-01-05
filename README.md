@@ -1,2 +1,2 @@
-# js-lab
-first 1 projects
+# js-lab #
+This is my first one project.
