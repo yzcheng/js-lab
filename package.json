@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "first 1 projects",
   "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +20,6 @@
   },
   "homepage": "https://github.com/yzcheng/js-lab#readme",
   "devDependencies": {
-    "webpack": "^1.12.9",
     "babel-eslint": "^5.0.0-beta6",
     "compression-webpack-plugin": "^0.2.0",
     "eslint": "^1.10.3",
@@ -28,10 +28,12 @@
     "gulp-size": "^2.0.0",
     "gulp-tslint": "^4.2.1",
     "html-loader": "^0.4.0",
+    "html-webpack-plugin": "^1.7.0",
     "pre-commit": "^1.1.2",
     "require-dir": "^0.3.0",
     "ts-loader": "^0.7.2",
-    "typescript": "^1.7.5"
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.9"
   },
   "dependencies": {
     "es6-promise": "3.0.2",

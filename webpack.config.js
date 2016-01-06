@@ -1,8 +1,16 @@
-var webpack = require('webpack');
-var commonsChunkPlugin = new webpack.optimize.CommonsChunkPlugin(
-/* chunkName= */"vendor", /* filename= */"vendor.bundle.js");
 var base_folder = './src';
 var app_folder = base_folder + "/app";
+
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var htmlWebpackPlugin = new HtmlWebpackPlugin({
+	title : 'My App',
+	template : base_folder + '/app-template.html',
+	inject : 'body'
+});
+var commonsChunkPlugin = new webpack.optimize.CommonsChunkPlugin(
+/* chunkName= */"vendor", /* filename= */"vendor.bundle.js");
+
 module.exports = {
 	entry : {
 		app : app_folder + '/boot.ts',
@@ -25,6 +33,5 @@ module.exports = {
 		} ],
 		noParse : [ /rtts_assert\/src\/rtts_assert/, /angular2\/bundles\/.+/ ]
 	},
-	plugins : [ // commonsPlugin,
-	commonsChunkPlugin ]
+	plugins : [ commonsChunkPlugin, htmlWebpackPlugin ]
 };
