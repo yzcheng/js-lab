@@ -28,3 +28,8 @@ import 'angular2/core';
 import 'rxjs';
 
 // Other vendors for example jQuery, Lodash, angular2-jwt
+//ng2-bootstrap
+import 'ng2-bootstrap/ng2-bootstrap';
+
+//include ag-grid library
+import '../node_modules/ag-grid/dist/ag-grid';

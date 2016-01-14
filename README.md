@@ -1,2 +1,2 @@
 # js-lab #
-This is my first one project.
+This is my first project, practice TypeScript language with Angular2.
